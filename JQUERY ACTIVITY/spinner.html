@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="css/customstylt.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/jquery-ui.js"></script>
+   <script>
+    $( function() {
+      var spinner = $( "#spinner" ).spinner();
+   
+      $( "#disable" ).on( "click", function() {
+        if ( spinner.spinner( "option", "disabled" ) ) {
+          spinner.spinner( "enable" );
+        } else {
+          spinner.spinner( "disable" );
+        }
+      });
+      $( "#destroy" ).on( "click", function() {
+        if ( spinner.spinner( "instance" ) ) {
+          spinner.spinner( "destroy" );
+        } else {
+          spinner.spinner();
+        }
+      });
+      $( "#getvalue" ).on( "click", function() {
+        alert( spinner.spinner( "value" ) );
+      });
+      $( "#setvalue" ).on( "click", function() {
+        spinner.spinner( "value", 5 );
+      });
+   
+      $( "button" ).button();
+    } );
+    </script>
+  
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Collage of Information and Computing Sciences</h1>
+        <h3>Bachelor Of Science in Information Systems</h3>
+        <h4>JQUERY-MANILYN PASTRANA</h4>
+        <a href="activityJquery.html"></a>
+    </header>
+    <nav>
+        <ul class="navigation_menu">
+            <h3>Widgets</h3>
+            <li> <a href="accordin.html">Accordion</a></li>
+            <li><a href="autocomplete.html">AutoComplte</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="checkboxradio.html">Checkboxradio</a></li>
+            <li><a href="controlgroup.html">Controlgroup</a></li>
+            <li><a href="datepicker.html">Datepicker</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="progressbar.html">Progressbar</a></li>
+            <li><a href="selectmenu.html">SelectMenu</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+
+      <h1>SPINNER</h1>
+       
+          <p>
+            <label for="spinner">Select a value:</label>
+            <input id="spinner" name="value">
+          </p>
+           
+          <p>
+            <button id="disable">Toggle disable/enable</button>
+            <button id="destroy">Toggle widget</button>
+          </p>
+           
+          <p>
+            <button id="getvalue">Get value</button>
+            <button id="setvalue">Set value to 5</button>
+          </p>
+           
+           
+           
+    </article>
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    
+</body>
+</html>

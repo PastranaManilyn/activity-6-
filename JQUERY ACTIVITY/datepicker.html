@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="css/customstylt.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/jquery-ui.js"></script>
+   <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+      $( "#anim" ).on( "change", function() {
+        $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+      });
+    } );
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Collage of Information and Computing Sciences</h1>
+        <h3>Bachelor Of Science in Information Systems</h3>
+        <h4>JQUERY-MANILYN PASTRANA</h4>
+        <a href="activityJquery.html"></a>
+    </header>
+    <nav>
+        <ul class="navigation_menu">
+            <h3>Widgets</h3>
+            <li> <a href="accordin.html">Accordion</a></li>
+            <li><a href="autocomplete.html">AutoComplte</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="checkboxradio.html">Checkboxradio</a></li>
+            <li><a href="controlgroup.html">Controlgroup</a></li>
+            <li><a href="datepicker.html">Datepicker</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="progressbar.html">Progressbar</a></li>
+            <li><a href="selectmenu.html">SelectMenu</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+        </ul>
+    </nav>
+
+    <article>
+
+      <h1>DATE PICKER</h1>
+
+           
+          <p>Date: <input type="text" id="datepicker" size="30"></p>
+           
+          <p>Animations:<br>
+            <select id="anim">
+              <option value="show">Show (default)</option>
+              <option value="slideDown">Slide down</option>
+              <option value="fadeIn">Fade in</option>
+              <option value="blind">Blind (UI Effect)</option>
+              <option value="bounce">Bounce (UI Effect)</option>
+              <option value="clip">Clip (UI Effect)</option>
+              <option value="drop">Drop (UI Effect)</option>
+              <option value="fold">Fold (UI Effect)</option>
+              <option value="slide">Slide (UI Effect)</option>
+              <option value="">None</option>
+            </select>
+          </p>
+           
+           
+
+    </article>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    
+</body>
+</html>

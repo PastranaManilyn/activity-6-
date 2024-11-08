@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="css/customstylt.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/jquery-ui.js"></script>
+   <script>
+    $( function() {
+      $( "#speed" ).selectmenu();
+   
+      $( "#files" ).selectmenu();
+   
+      $( "#number" )
+        .selectmenu()
+        .selectmenu( "menuWidget" )
+          .addClass( "overflow" );
+   
+      $( "#salutation" ).selectmenu();
+    } );
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Collage of Information and Computing Sciences</h1>
+        <h3>Bachelor Of Science in Information Systems</h3>
+        <h4>JQUERY-MANILYN PASTRANA</h4>
+        <a href="activityJquery.html"></a>
+    </header>
+    <nav>
+        <ul class="navigation_menu">
+            <h3>Widgets</h3>
+            <li> <a href="accordin.html">Accordion</a></li>
+            <li><a href="autocomplete.html">AutoComplte</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="checkboxradio.html">Checkboxradio</a></li>
+            <li><a href="controlgroup.html">Controlgroup</a></li>
+            <li><a href="datepicker.html">Datepicker</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="progressbar.html">Progressbar</a></li>
+            <li><a href="selectmenu.html">SelectMenu</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+       <h1>SELECT MENU</h1>
+           
+          <div class="demo">
+           
+          <form action="#">
+           
+            <fieldset>
+              <label for="speed">Select a speed</label>
+              <select name="speed" id="speed">
+                <option>Slower</option>
+                <option>Slow</option>
+                <option selected="selected">Medium</option>
+                <option>Fast</option>
+                <option>Faster</option>
+              </select>
+           
+              <label for="files">Select a file</label>
+              <select name="files" id="files">
+                <optgroup label="Scripts">
+                  <option value="jquery">jQuery.js</option>
+                  <option value="jqueryui">ui.jQuery.js</option>
+                </optgroup>
+                <optgroup label="Other files">
+                  <option value="somefile">Some unknown file</option>
+                  <option value="someotherfile">Some other file with a very long option text</option>
+                </optgroup>
+              </select>
+           
+              <label for="number">Select a number</label>
+              <select name="number" id="number">
+                <option>1</option>
+                <option selected="selected">2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+              </select>
+           
+              <label for="salutation">Select a title</label>
+              <select name="salutation" id="salutation">
+                <option disabled="" selected="">Please pick one</option>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Dr.</option>
+                <option>Prof.</option>
+                <option>Other</option>
+              </select>
+            </fieldset>
+           
+          </form>
+           
+          </div>
+           
+           
+    </article>
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    
+</body>
+</html>

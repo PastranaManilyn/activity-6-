@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="css/customstylt.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/jquery-ui.js"></script>
+
+   <script>
+    $( function() {
+      $( ".widget button" )
+        .eq( 0 ).button()
+        .end().eq( 1 ).button( {
+          icon: "ui-icon-gear",
+          showLabel: false
+        } ).end().eq( 2 ).button( {
+          icon: "ui-icon-gear"
+        } ).end().eq( 3 ).button( {
+          icon: "ui-icon-gear",
+          iconPosition: "end"
+        } ).end().eq( 4 ).button( {
+          icon: "ui-icon-gear",
+          iconPosition: "top"
+        } ).end().eq( 5 ).button( {
+          icon: "ui-icon-gear",
+          iconPosition: "bottom"
+        } );
+    } );
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Collage of Information and Computing Sciences</h1>
+        <h3>Bachelor Of Science in Information Systems</h3>
+        <h4>JQUERY-MANILYN PASTRANA</h4>
+        <a href="activityJquery.html"></a>
+    </header>
+    <nav>
+        <ul class="navigation_menu">
+            <h3>Widgets</h3>
+            <li> <a href="accordin.html">Accordion</a></li>
+            <li><a href="autocomplete.html">AutoComplte</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="checkboxradio.html">Checkboxradio</a></li>
+            <li><a href="controlgroup.html">Controlgroup</a></li>
+            <li><a href="datepicker.html">Datepicker</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="progressbar.html">Progressbar</a></li>
+            <li><a href="selectmenu.html">SelectMenu</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tooltip.html">Tooltip</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+       <h1>BUTTON</h1>
+          
+          <div class="widget">
+            <h1>Widget</h1>
+            <button>Button with only text</button>
+            <button>Button with icon only</button>
+            <button>Button with icon on the left</button>
+            <button>Button with icon on the right</button>
+            <button>Button with icon on the top</button>
+            <button>Button with icon on the bottom</button>
+          </div>
+          <div class="css">
+            <h1>CSS</h1>
+            <button class="ui-button ui-widget ui-corner-all">
+              Button with only text
+            </button>
+            <button class="ui-button ui-widget ui-corner-all ui-button-icon-only" title="Button with icon only">
+              <span class="ui-icon ui-icon-gear"></span> Button with icon only
+            </button>
+            <button class="ui-button ui-widget ui-corner-all">
+              <span class="ui-icon ui-icon-gear"></span> Button with icon on the left
+            </button>
+            <button class="ui-button ui-widget ui-corner-all">
+              Button with icon on the right <span class="ui-icon ui-icon-gear"></span>
+            </button>
+            <button class="ui-button ui-widget ui-corner-all">
+              <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span> Button with icon on the top
+            </button>
+            <button class="ui-button ui-widget ui-corner-all">
+              Button with icon on the bottom <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span>
+            </button>
+          </div>
+           
+    </article>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    
+</body>
+</html>
